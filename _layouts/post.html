@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="post">
+	<div class="post__back">
+    	<a href="/">&lt;-- 返回目录</a>
+    </div>
+    <div class="post__title">
+    	<h1>{{ page.title }}</h1>
+    </div>
+    <div class="post__meta">
+    	<p>{{ tags_content }}</p>
+    </div>
+    <div class="post__content"?>
+        {{ content }}
+    </div>
+		<br/>
+		<hr />
+		<br />
+		<div class="PageNavigation">
+			{% if page.previous.url %}
+			<p>
+				<a class="prev" href="{{page.previous.url}}">下一节：{{page.previous.title}}</a>
+			</p>
+			{% endif %}
+			<br/>
+			{% if page.next.url %}
+			<p>
+				<a class="next" href="{{page.next.url}}">上一节：{{page.next.title}}</a>
+			</p>
+			{% endif %}
+		</div>
+		<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="{{page.url}}" data-title="{{page.title}}" data-url="http://react.huziketang.com/{{page.url}}"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"huzidaha"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0]
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
