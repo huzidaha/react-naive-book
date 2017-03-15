@@ -50,9 +50,6 @@
 * Lesson 15 - [实战分析：评论功能（二）](http://react.huziketang.com/blog/lesson15)
 * Lesson 16 - [实战分析：评论功能（三）](http://react.huziketang.com/blog/lesson16)
 
-**第二个阶段**
-
-**第三个阶段**
 
 ## 特别鸣谢
 
