@@ -52,9 +52,6 @@
 
 **第二个阶段**
 
-* Lesson 17 - [前端应用状态管理——状态提升](http://react.huziketang.com/blog/lesson17)
-* ...
-
 **第三个阶段**
 
 ## 特别鸣谢
