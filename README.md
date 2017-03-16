@@ -50,6 +50,12 @@
 * Lesson 15 - [实战分析：评论功能（二）](http://react.huziketang.com/blog/lesson15)
 * Lesson 16 - [实战分析：评论功能（三）](http://react.huziketang.com/blog/lesson16)
 
+**第一个阶段**
+
+* Lesson 17 - [前端应用状态管理 —— 状态提升](http://react.huziketang.com/blog/lesson17)
+* Lesson 18 - [组件生命周期（挂载阶段）](http://react.huziketang.com/blog/lesson18)
+* ...
+
 
 ## 特别鸣谢
 
