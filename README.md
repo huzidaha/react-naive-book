@@ -59,7 +59,8 @@
 * Lesson 19 - [ 挂载阶段的组件生命周期（二）](http://react.huziketang.com/blog/lesson19)
 * Lesson 20 - [ref 和 React.js 中的 DOM 操作](http://react.huziketang.com/blog/lesson20)
 * Lesson 21 - [props.children 和容器类组件](http://react.huziketang.com/blog/lesson21)
-* Lesson 22 - [PropTypes 和组件参数验证](http://react.huziketang.com/blog/lesson22)
+* Lesson 22 - [dangerouslySetHTML 和 style 属性](http://react.huziketang.com/blog/lesson22)
+* Lesson 23 - [PropTypes 和组件参数验证](http://react.huziketang.com/blog/lesson23)
 * ...
 
 
