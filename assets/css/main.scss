@@ -302,3 +302,19 @@ blockquote {
   top: 4px;
   left: 5px;
 }
+
+.share-block {
+	text-align: center;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	p {
+		color: #000000;
+		margin: 10px;
+	}
+	.share-block-inner {
+		width: 180px;
+		margin: 0 auto;
+	}
+}
