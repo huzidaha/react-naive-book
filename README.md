@@ -67,6 +67,9 @@
 * Lesson 25 - [实战分析：评论功能（四）](http://react.huziketang.com/blog/lesson25)
 * Lesson 26 - [实战分析：评论功能（五）](http://react.huziketang.com/blog/lesson26)
 * Lesson 27 - [实战分析：评论功能（六）](http://react.huziketang.com/blog/lesson27)
+
+**第三个阶段**
+
 * ...
 
 
