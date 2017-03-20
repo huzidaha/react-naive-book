@@ -79,6 +79,9 @@
 * 邮箱：huzidaha@126.com
 * 知乎：[@胡子大哈](https://www.zhihu.com/people/hu-zi-da-ha)
 * 专栏：[@前端大哈](https://zhuanlan.zhihu.com/qianduandaha)
+* 加入《React.js 小书》读者交流群，一起讨论、交流、学习前端技术。
+
+<img width='256px' src='http://react.huziketang.com/assets/img/wechat-user.jpeg' />
 
 
 ## License
