@@ -54,6 +54,8 @@
 
 **第二个阶段**
 
+![](https://img.shields.io/badge/已完成-100%25-brightgreen.svg)
+
 * Lesson 17 - [前端应用状态管理 —— 状态提升](http://react.huziketang.com/blog/lesson17)
 * Lesson 18 - [挂载阶段的组件生命周期（一）](http://react.huziketang.com/blog/lesson18)
 * Lesson 19 - [挂载阶段的组件生命周期（二）](http://react.huziketang.com/blog/lesson19)
