@@ -70,8 +70,8 @@
 
 **第三个阶段**
 
+* Lesson 28 - [高阶组件（Higher-Order Components）](http://react.huziketang.com/blog/lesson28)
 * ...
-
 
 ## 特别鸣谢
 
