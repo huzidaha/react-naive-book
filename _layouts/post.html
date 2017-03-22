@@ -5,16 +5,26 @@ layout: default
 <h1 style='position: relative; top: -15px;'>React.js 小书</h1>
 <div class="post">
 	<div class="post__back">
-    	<a href="/">&lt;-- 返回目录</a>
-    </div>
+  	<a href="/">&lt;-- 返回目录</a>
     <div class="post__title">
     	<h1>{{ page.title }}</h1>
     </div>
     <div class="post__meta">
     	<p>{{ tags_content }}</p>
     </div>
+		<div>
+			<p style="margin: 20px;">
+				<div style="margin-bottom: 10px;">作者：胡子大哈</div>
+				<div>
+					本文链接：
+					<a href="http://react.huziketang.com{{ page.url }}">
+						http://react.huziketang.com{{ page.url }}
+					</a>
+				</div>
+			</p>
+		</div>
     <div class="post__content"?>
-        {{ content }}
+      {{ content }}
     </div>
 		<br/>
 		<hr />
