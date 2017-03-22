@@ -4,15 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="react.js,web,props,state,javascript,{{ page.title }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     {% if page.title %}
-        <title>{{ page.title }}</title>
+        <title>{{ page.title }} | {{ site.name }}</title>
     {% else %}
         <title>{{ site.name }}</title>
     {% endif %}
 
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}|本文内容：{{ page.content | strip_html | strip | strip_newlines | slice: 0, 110 }}..." />
 
     {% if site.google_verification %}
         <meta name="google-site-verification" content="{{ site.google_verify }}">
