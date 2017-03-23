@@ -71,6 +71,7 @@
 **第三个阶段**
 
 * Lesson 28 - [高阶组件（Higher-Order Components）](http://react.huziketang.com/blog/lesson28)
+* Lesson 29 - [React.js 的 context](http://react.huziketang.com/blog/lesson29)
 * ...
 
 ## 特别鸣谢
