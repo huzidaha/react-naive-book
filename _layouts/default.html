@@ -32,8 +32,12 @@ href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
 
 <body>
 
-    <div class="wrapper">
-        {{ content }}
+    <div class='float-wechat' id='float-wechat'>
+    	<img src='/assets/img/wechat-user.jpeg' />
+      <p>加入《React.js 小书》读者交流群，一起讨论、交流、学习前端技术。</p>
+    </div>
+    <div class="wrapper" id='wrapper'>
+      {{ content }}
     </div>
     <script src="/assets/js/highlight.js"></script>
     <script>
@@ -56,6 +60,16 @@ href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(bp, s);
     })();
+    var wrapper = document.getElementById('wrapper')
+    var floatWechat = document.getElementById('float-wechat')
+    window.addEventListener('resize', resetFloatWechat)
+    function resetFloatWechat(event) {
+      var rect = wrapper.getBoundingClientRect()
+      var left = rect.left + rect.width
+      floatWechat.style.left = left + 'px'
+      floatWechat.style.display = 'block'
+    }
+    resetFloatWechat()
     </script>
 
 </body>

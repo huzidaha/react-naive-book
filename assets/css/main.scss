@@ -69,6 +69,7 @@ blockquote {
 }
 
 .wrapper {
+	position: relative;
 	max-width: 600px;
 	margin: auto;
 	padding: 60px 30px 60px 30px;
@@ -79,6 +80,21 @@ blockquote {
 	}
 }
 
+.float-wechat {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0px;
+	width: 180px;
+	> img {
+		width: 100%;
+	}
+	p {
+		font-size: 14px;
+		text-align: center;
+		line-height: 20px;
+	}
+}
 
 .header {
 	display: flex;
