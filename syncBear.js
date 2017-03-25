@@ -70,7 +70,7 @@ const checkTODOsIfExist = (content, title) => {
 }
 
 const DATE_FORMAT = 'YYYY-MM-DD'
-const TEXT_PREFIX = (title) =>  `---
+const TEXT_PREFIX = (title, i) =>  `---
 layout: post
 title: ${title}
 ---
@@ -97,7 +97,7 @@ const generatePost = async (note, i) => {
   console.log('Creating post', note.title)
   return fs.writeFile(
     postName,
-    `${TEXT_PREFIX(note.title)}${note.text}`,
+    `${TEXT_PREFIX(note.title, i)}${note.text}`,
     'utf-8'
   )
 }
