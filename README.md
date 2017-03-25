@@ -72,6 +72,7 @@
 
 * Lesson 28 - [高阶组件（Higher-Order Components）](http://react.huziketang.com/blog/lesson28)
 * Lesson 29 - [React.js 的 context](http://react.huziketang.com/blog/lesson29)
+* Lesson 30 - [动手实现一个 Redux（一）：优雅地修改共享状态](http://react.huziketang.com/blog/lesson30)
 * ...
 
 ## 特别鸣谢
