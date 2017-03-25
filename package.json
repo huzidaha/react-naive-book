@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "fs-extra": "^2.0.0",
+    "jsonfile": "^2.4.0",
     "moment": "^2.17.1",
     "sqlite": "^2.3.0",
     "sqlite3": "~3.1.4"

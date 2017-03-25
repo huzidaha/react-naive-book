@@ -3,10 +3,12 @@ import rawFs from 'fs'
 import sqlite3 from 'sqlite3'
 import moment from 'moment'
 import del from 'node-delete'
+import jsonfile from 'jsonfile'
 
 const BEAR_PATH = '/Users/MookCake/Library/Containers/net.shinyfrog.bear/Data/Library/Application\ Support/net.shinyfrog.bear'
 const NOTE_DATABASE = `${BEAR_PATH}/database.sqlite`
 const NOTE_IMAGES_PATH = `${BEAR_PATH}/Local\ Files/Note\ Images`
+const itemsDescriptions = jsonfile.readFileSync('./parse-seo.json')
 
 const sqlite = sqlite3.verbose()
 const db = new sqlite.Database(NOTE_DATABASE)
@@ -70,9 +72,15 @@ const checkTODOsIfExist = (content, title) => {
 }
 
 const DATE_FORMAT = 'YYYY-MM-DD'
-const TEXT_PREFIX = (title, i) =>  `---
+const TEXT_PREFIX = (title, i) =>  {
+  const item = itemsDescriptions[i] || {}
+  const description = item.description || 'React.js 小书是一个开源、免费、专业、简单的 React.js 在线教程。提炼实战经验中基础的、重要的、频繁的知识进行重点讲解，让你能用最少的精力深入了解实战中最需要的 React.js 知识。'
+  const keywords = item.keywords || 'react.js,web,props,state,javascript'
+return `---
 layout: post
 title: ${title}
+description: ${description}
+tags: [${keywords}]
 ---
 
 <ul style='font-size: 14px;'>
@@ -86,6 +94,7 @@ title: ${title}
 </ul>
 
 `
+}
 const IMAGE_REGX = /\[image:([\w\d\-]+\/([\w\d\.\-]+.png))\]/g
 const IMAGE_REGX_EACH = /\[image:([\w\d\-]+\/([\w\.\d\-]+.png))\]/
 
@@ -93,7 +102,7 @@ const generatePost = async (note, i) => {
   const date = getDate(i)
   const postName = `./_posts/${date}-lesson${i + 1}.md`
   await copyImagesForNote(note)
-  replaceImageTag(note)
+  replaceImageTag(note, i)
   console.log('Creating post', note.title)
   return fs.writeFile(
     postName,
@@ -123,8 +132,9 @@ const copyImagesForNote = (note) => {
   )
 }
 
-const replaceImageTag = (note) => {
-  note.text = note.text.replace(IMAGE_REGX, '<a href="/assets/img/posts/$2" target="_blank">![示例图片](/assets/img/posts/$2)</a>')
+const replaceImageTag = (note, i) => {
+  const item = itemsDescriptions[i] || { alt: '实例图片' }
+  note.text = note.text.replace(IMAGE_REGX, `<a href="/assets/img/posts/$2" target="_blank">![${item.alt}](/assets/img/posts/$2)</a>`)
 }
 
 const checkIfExistsAndCopy = async (obj) => {
