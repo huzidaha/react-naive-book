@@ -74,6 +74,7 @@
 * Lesson 29 - [React.js 的 context](http://react.huziketang.com/blog/lesson29)
 * Lesson 30 - [动手实现一个 Redux（一）：优雅地修改共享状态](http://react.huziketang.com/blog/lesson30)
 * Lesson 31 - [动手实现一个 Redux（二）：抽离 store 和监控数据变化](http://react.huziketang.com/blog/lesson31)
+* Lesson 32 - [动手实现一个 Redux（三）：纯函数（Pure Function）简介](http://react.huziketang.com/blog/lesson32)
 * ...
 
 ## 特别鸣谢
