@@ -30,8 +30,9 @@ layout: default
   <div class="block">
     <h2>目录</h2>
     <b>第一个阶段</b><img class='badge' src='https://img.shields.io/badge/已完成-100%25-brightgreen.svg' />
+    {% assign posts = site.posts | reverse %}
     <ul class="table-of-content">
-        {% for post in site.posts %}
+        {% for post in posts %}
         {% if forloop.index <= 16 %}
         <li>
             <span class="date">Lesson {{forloop.index}}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
@@ -42,7 +43,7 @@ layout: default
     <p>
       <b>第二个阶段</b><img class='badge' src='https://img.shields.io/badge/已完成-100%25-brightgreen.svg' />
       <ul class="table-of-content">
-          {% for post in site.posts %}
+          {% for post in posts %}
           {% if forloop.index > 16 and forloop.index <= 27 %}
           <li>
               <span class="date">Lesson {{forloop.index}}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
@@ -54,7 +55,7 @@ layout: default
     <p>
       <b>第三个阶段</b>（编写中）<!--<img class='badge' src='https://img.shields.io/badge/进行中-0%25-red.svg' />-->
       <ul class="table-of-content">
-          {% for post in site.posts %}
+          {% for post in posts %}
           {% if forloop.index > 27 %}
           <li>
               <span class="date">Lesson {{forloop.index}}</span> - <a href="{{ post.url }}">{{ post.title }}</a>

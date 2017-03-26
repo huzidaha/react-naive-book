@@ -112,8 +112,8 @@ const generatePost = async (note, i) => {
 }
 
 const getDate = (i) => {
-  return moment('2017-01-01')
-    .day(-i)
+  return moment('2017-02-20')
+    .day(i)
     .format(DATE_FORMAT)
 }
 
