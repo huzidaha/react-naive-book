@@ -19,15 +19,15 @@ layout: default
 		<hr />
 		<br />
 		<div class="PageNavigation">
-			{% if page.previous.url %}
+			{% if page.next.url %}
 			<p>
-				<a class="prev" href="{{page.previous.url}}">下一节：{{page.previous.title}}</a>
+				<a class="next" href="{{page.next.url}}">下一节：{{page.next.title}}</a>
 			</p>
 			{% endif %}
 			<br/>
-			{% if page.next.url %}
+			{% if page.previous.url %}
 			<p>
-				<a class="next" href="{{page.next.url}}">上一节：{{page.next.title}}</a>
+				<a class="prev" href="{{page.previous.url}}">上一节：{{page.previous.title}}</a>
 			</p>
 			{% endif %}
 		</div>
