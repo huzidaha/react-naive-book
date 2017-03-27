@@ -59,14 +59,34 @@ href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     })();
     var wrapper = document.getElementById('wrapper')
     var floatWechat = document.getElementById('float-wechat')
-    window.addEventListener('resize', resetFloatWechat)
-    function resetFloatWechat(event) {
+  	var tableOfContent = document.getElementById('table-of-content')
+
+    function resetAll (event) {
       var rect = wrapper.getBoundingClientRect()
+      resetFloatWechat(rect)
+      resetTableOfContent(rect)
+    }
+
+    function resetFloatWechat(rect) {
       var left = rect.left + rect.width
       floatWechat.style.left = left + 'px'
       floatWechat.style.display = 'block'
     }
-    resetFloatWechat()
+
+    function resetTableOfContent (rect) {
+      var left = rect.left + rect.width
+      tableOfContent.style.left = left + 'px'
+      tableOfContent.style.display = 'block'
+    }
+
+    window.addEventListener('resize', resetAll)
+
+    tableOfContent.addEventListener('mousewheel', function (event) {
+      // event.preventDefault()
+      event.stopPropagation()
+      return false
+    }, false)
+    resetAll()
     </script>
 
 </body>

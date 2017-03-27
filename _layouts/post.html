@@ -3,6 +3,27 @@ layout: default
 ---
 
 <h1 style='position: relative; top: -15px;'>React.js 小书</h1>
+{% assign posts = site.posts | reverse %}
+<nav class='table-of-content' id='table-of-content'>
+	<h3>第一阶段</h3>
+  {% for post in posts %}
+  {% if forloop.index <= 16 %}
+		<a href="{{ post.url }}">{{forloop.index}}. {{ post.title }}</a>
+  {% endif %}
+  {% endfor %}
+	<h3>第二阶段</h3>
+  {% for post in posts %}
+  {% if forloop.index > 16 and forloop.index <= 27 %}
+		<a href="{{ post.url }}">{{forloop.index}}. {{ post.title }}</a>
+  {% endif %}
+  {% endfor %}
+	<h3>第三阶段</h3>
+  {% for post in posts %}
+  {% if forloop.index > 27 %}
+		<a href="{{ post.url }}">{{forloop.index}}. {{ post.title }}</a>
+  {% endif %}
+  {% endfor %}
+</nav>
 <div class="post">
 	<div class="post__back">
   	<a href="/">&lt;-- 返回目录</a>
