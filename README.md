@@ -76,7 +76,7 @@
 * Lesson 31 - [动手实现 Redux（二）：抽离 store 和监控数据变化](http://react.huziketang.com/blog/lesson31)
 * Lesson 32 - [动手实现 Redux（三）：纯函数（Pure Function）简介](http://react.huziketang.com/blog/lesson32)
 * Lesson 33 - [动手实现 Redux（四）：共享结构的对象提高性能](http://react.huziketang.com/blog/lesson33)
-* Lesson 34 - [动手实现 Redux（五）：不要问为什么的 reduer](http://react.huziketang.com/blog/lesson34)
+* Lesson 34 - [动手实现 Redux（五）：不要问为什么的 reducer](http://react.huziketang.com/blog/lesson34)
 * Lesson 35 - [动手实现 Redux（六）：Redux 总结](http://react.huziketang.com/blog/lesson35)
 * ...
 
