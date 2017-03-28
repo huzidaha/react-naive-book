@@ -14,6 +14,9 @@ layout: default
 }
 </style>
 <h1 style='position: relative; top: -15px;'>React.js 小书</h1>
+{% if page.next.url %}
+<link ref='prefetch' href="{{ page.next.url }}" />
+{% endif %}
 {% assign posts = site.posts | reverse %}
 <nav class='table-of-content' id='table-of-content'>
 	<a href='/'>&lt;-- 首页</a>
