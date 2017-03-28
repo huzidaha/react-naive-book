@@ -1,32 +1,60 @@
 ---
 layout: default
 ---
-
+<style media="screen">
+@media (max-width: 1335px) and (min-width: 900px) {
+	.wrapper {
+		margin-left: 329px;
+	}
+}
+@media (max-width: 900px) {
+	#table-of-content {
+		margin-left: -350px;
+	}
+}
+</style>
 <h1 style='position: relative; top: -15px;'>React.js 小书</h1>
 {% assign posts = site.posts | reverse %}
 <nav class='table-of-content' id='table-of-content'>
+	<a href='/'>&lt;-- 首页</a>
 	<h3>第一阶段</h3>
   {% for post in posts %}
   {% if forloop.index <= 16 %}
-		<a href="{{ post.url }}">{{forloop.index}}. {{ post.title }}</a>
+		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
   {% endif %}
   {% endfor %}
 	<h3>第二阶段</h3>
   {% for post in posts %}
   {% if forloop.index > 16 and forloop.index <= 27 %}
-		<a href="{{ post.url }}">{{forloop.index}}. {{ post.title }}</a>
+		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
   {% endif %}
   {% endfor %}
 	<h3>第三阶段</h3>
   {% for post in posts %}
   {% if forloop.index > 27 %}
-		<a href="{{ post.url }}">{{forloop.index}}. {{ post.title }}</a>
+		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
   {% endif %}
   {% endfor %}
 </nav>
+<script type="text/javascript">
+var tableOfContent = document.getElementById('table-of-content')
+var timer = null
+function resetTableOfContent (rect) {
+  scrollTop = localStorage.getItem('scrollTop') * 1
+  scrollTop = scrollTop || 0
+  tableOfContent.scrollTop = scrollTop
+}
+tableOfContent.addEventListener('scroll', function (event) {
+  clearTimeout(timer)
+  timer = setTimeout(function() {
+    localStorage.setItem('scrollTop', tableOfContent.scrollTop)
+  }, 50)
+}, false)
+resetTableOfContent()
+</script>
 <div class="post">
 	<div class="post__back">
-  	<a href="/">&lt;-- 返回目录</a>
+  	<a href="/">&lt;-- 返回首页</a>
     <div class="post__title">
     	<h1>{{ page.title }}</h1>
     </div>
