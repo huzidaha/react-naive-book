@@ -35,49 +35,49 @@
 
 ![](https://img.shields.io/badge/已完成-100%25-brightgreen.svg)
 
-* Lesson 1 - [React.js 简介](http://react.huziketang.com/blog/lesson1)
-* Lesson 2 - [前端组件化（一）：从一个简单的例子讲起](http://react.huziketang.com/blog/lesson2)
-* Lesson 3 - [前端组件化（二）：优化 DOM 操作](http://react.huziketang.com/blog/lesson3)
-* Lesson 4 - [前端组件化（三）：抽象出公共组件类](http://react.huziketang.com/blog/lesson4)
-* Lesson 5 - [React.js 基本环境安装](http://react.huziketang.com/blog/lesson5)
-* Lesson 6 - [使用 JSX 描述 UI 信息](http://react.huziketang.com/blog/lesson6)
-* Lesson 7 - [组件的 render 方法](http://react.huziketang.com/blog/lesson7)
-* Lesson 8 - [组件的组合、嵌套和组件树](http://react.huziketang.com/blog/lesson8)
-* Lesson 9 - [事件监听](http://react.huziketang.com/blog/lesson9)
-* Lesson 10 - [组件的 state 和 setState](http://react.huziketang.com/blog/lesson10)
-* Lesson 11 - [配置组件的 props](http://react.huziketang.com/blog/lesson11)
-* Lesson 12 - [state vs props](http://react.huziketang.com/blog/lesson12)
-* Lesson 13 - [渲染列表数据](http://react.huziketang.com/blog/lesson13)
-* Lesson 14 - [实战分析：评论功能（一）](http://react.huziketang.com/blog/lesson14)
-* Lesson 15 - [实战分析：评论功能（二）](http://react.huziketang.com/blog/lesson15)
-* Lesson 16 - [实战分析：评论功能（三）](http://react.huziketang.com/blog/lesson16)
+* Lesson 1 - [React.js 简介](http://huziketang.com/books/react/lesson1)
+* Lesson 2 - [前端组件化（一）：从一个简单的例子讲起](http://huziketang.com/books/react/lesson2)
+* Lesson 3 - [前端组件化（二）：优化 DOM 操作](http://huziketang.com/books/react/lesson3)
+* Lesson 4 - [前端组件化（三）：抽象出公共组件类](http://huziketang.com/books/react/lesson4)
+* Lesson 5 - [React.js 基本环境安装](http://huziketang.com/books/react/lesson5)
+* Lesson 6 - [使用 JSX 描述 UI 信息](http://huziketang.com/books/react/lesson6)
+* Lesson 7 - [组件的 render 方法](http://huziketang.com/books/react/lesson7)
+* Lesson 8 - [组件的组合、嵌套和组件树](http://huziketang.com/books/react/lesson8)
+* Lesson 9 - [事件监听](http://huziketang.com/books/react/lesson9)
+* Lesson 10 - [组件的 state 和 setState](http://huziketang.com/books/react/lesson10)
+* Lesson 11 - [配置组件的 props](http://huziketang.com/books/react/lesson11)
+* Lesson 12 - [state vs props](http://huziketang.com/books/react/lesson12)
+* Lesson 13 - [渲染列表数据](http://huziketang.com/books/react/lesson13)
+* Lesson 14 - [实战分析：评论功能（一）](http://huziketang.com/books/react/lesson14)
+* Lesson 15 - [实战分析：评论功能（二）](http://huziketang.com/books/react/lesson15)
+* Lesson 16 - [实战分析：评论功能（三）](http://huziketang.com/books/react/lesson16)
 
 **第二个阶段**
 
 ![](https://img.shields.io/badge/已完成-100%25-brightgreen.svg)
 
-* Lesson 17 - [前端应用状态管理 —— 状态提升](http://react.huziketang.com/blog/lesson17)
-* Lesson 18 - [挂载阶段的组件生命周期（一）](http://react.huziketang.com/blog/lesson18)
-* Lesson 19 - [挂载阶段的组件生命周期（二）](http://react.huziketang.com/blog/lesson19)
-* Lesson 20 - [更新阶段的组件生命周期](http://react.huziketang.com/blog/lesson20)
-* Lesson 21 - [ref 和 React.js 中的 DOM 操作](http://react.huziketang.com/blog/lesson21)
-* Lesson 22 - [props.children 和容器类组件](http://react.huziketang.com/blog/lesson22)
-* Lesson 23 - [dangerouslySetHTML 和 style 属性](http://react.huziketang.com/blog/lesson23)
-* Lesson 24 - [PropTypes 和组件参数验证](http://react.huziketang.com/blog/lesson24)
-* Lesson 25 - [实战分析：评论功能（四）](http://react.huziketang.com/blog/lesson25)
-* Lesson 26 - [实战分析：评论功能（五）](http://react.huziketang.com/blog/lesson26)
-* Lesson 27 - [实战分析：评论功能（六）](http://react.huziketang.com/blog/lesson27)
+* Lesson 17 - [前端应用状态管理 —— 状态提升](http://huziketang.com/books/react/lesson17)
+* Lesson 18 - [挂载阶段的组件生命周期（一）](http://huziketang.com/books/react/lesson18)
+* Lesson 19 - [挂载阶段的组件生命周期（二）](http://huziketang.com/books/react/lesson19)
+* Lesson 20 - [更新阶段的组件生命周期](http://huziketang.com/books/react/lesson20)
+* Lesson 21 - [ref 和 React.js 中的 DOM 操作](http://huziketang.com/books/react/lesson21)
+* Lesson 22 - [props.children 和容器类组件](http://huziketang.com/books/react/lesson22)
+* Lesson 23 - [dangerouslySetHTML 和 style 属性](http://huziketang.com/books/react/lesson23)
+* Lesson 24 - [PropTypes 和组件参数验证](http://huziketang.com/books/react/lesson24)
+* Lesson 25 - [实战分析：评论功能（四）](http://huziketang.com/books/react/lesson25)
+* Lesson 26 - [实战分析：评论功能（五）](http://huziketang.com/books/react/lesson26)
+* Lesson 27 - [实战分析：评论功能（六）](http://huziketang.com/books/react/lesson27)
 
 **第三个阶段**
 
-* Lesson 28 - [高阶组件（Higher-Order Components）](http://react.huziketang.com/blog/lesson28)
-* Lesson 29 - [React.js 的 context](http://react.huziketang.com/blog/lesson29)
-* Lesson 30 - [动手实现 Redux（一）：优雅地修改共享状态](http://react.huziketang.com/blog/lesson30)
-* Lesson 31 - [动手实现 Redux（二）：抽离 store 和监控数据变化](http://react.huziketang.com/blog/lesson31)
-* Lesson 32 - [动手实现 Redux（三）：纯函数（Pure Function）简介](http://react.huziketang.com/blog/lesson32)
-* Lesson 33 - [动手实现 Redux（四）：共享结构的对象提高性能](http://react.huziketang.com/blog/lesson33)
-* Lesson 34 - [动手实现 Redux（五）：不要问为什么的 reducer](http://react.huziketang.com/blog/lesson34)
-* Lesson 35 - [动手实现 Redux（六）：Redux 总结](http://react.huziketang.com/blog/lesson35)
+* Lesson 28 - [高阶组件（Higher-Order Components）](http://huziketang.com/books/react/lesson28)
+* Lesson 29 - [React.js 的 context](http://huziketang.com/books/react/lesson29)
+* Lesson 30 - [动手实现 Redux（一）：优雅地修改共享状态](http://huziketang.com/books/react/lesson30)
+* Lesson 31 - [动手实现 Redux（二）：抽离 store 和监控数据变化](http://huziketang.com/books/react/lesson31)
+* Lesson 32 - [动手实现 Redux（三）：纯函数（Pure Function）简介](http://huziketang.com/books/react/lesson32)
+* Lesson 33 - [动手实现 Redux（四）：共享结构的对象提高性能](http://huziketang.com/books/react/lesson33)
+* Lesson 34 - [动手实现 Redux（五）：不要问为什么的 reducer](http://huziketang.com/books/react/lesson34)
+* Lesson 35 - [动手实现 Redux（六）：Redux 总结](http://huziketang.com/books/react/lesson35)
 * ...
 
 ## 特别鸣谢
@@ -96,7 +96,7 @@
 * 专栏：[@前端大哈](https://zhuanlan.zhihu.com/qianduandaha)
 * 加入《React.js 小书》读者交流群，一起讨论、交流、学习前端技术。
 
-<img width='256px' src='http://react.huziketang.com/assets/img/wechat-user.jpeg' />
+<img width='256px' src='http://huzidaha.github.io/react-naive-book/assets/img/wechat-user.jpeg' />
 
 
 ## License
