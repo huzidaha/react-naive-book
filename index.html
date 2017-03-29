@@ -6,7 +6,7 @@ layout: default
     <h1>{{ site.name }}</h1>
     <ul>
         {% for item in site.data.navigation %}
-        <li><a href="{{ site.site_root }}{{ item.url }}">{{ item.title }}</a></li>
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
     </ul>
 </div>
