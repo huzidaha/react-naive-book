@@ -1,10 +1,12 @@
 # Blog settings
-permalink: /blog/:title
+permalink: :title
 
 
 # My variables
 name: React.js 小书
 description: React.js 小书是一个开源、免费、专业、简单的 React.js 在线教程
+site_root: /books/react
+static_path: http://huzidaha.github.io/react-naive-book
 google_verification: null
 
 

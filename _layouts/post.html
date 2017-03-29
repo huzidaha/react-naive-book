@@ -15,27 +15,27 @@ layout: default
 </style>
 <h1 style='position: relative; top: -15px;'>React.js 小书</h1>
 {% if page.next.url %}
-<link ref='prefetch' href="{{ page.next.url }}" />
+<link ref='prefetch' href="{{ site.site_root }}{{ page.next.url }}" />
 {% endif %}
 {% assign posts = site.posts | reverse %}
 <nav class='table-of-content' id='table-of-content'>
-	<a href='/'>&lt;-- 首页</a>
+	<a href='{{ site.site_root }}'>&lt;-- 首页</a>
 	<h3>第一阶段</h3>
   {% for post in posts %}
   {% if forloop.index <= 16 %}
-		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
+		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ site.site_root }}{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
   {% endif %}
   {% endfor %}
 	<h3>第二阶段</h3>
   {% for post in posts %}
   {% if forloop.index > 16 and forloop.index <= 27 %}
-		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
+		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ site.site_root }}{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
   {% endif %}
   {% endfor %}
 	<h3>第三阶段</h3>
   {% for post in posts %}
   {% if forloop.index > 27 %}
-		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
+		<a {% if post.url == page.url %} class='active' {% endif %} href="{{ site.site_root }}{{ post.url }}" title="{{ post.title }}">{{forloop.index}}. {{ post.title }}</a>
   {% endif %}
   {% endfor %}
 </nav>
@@ -57,7 +57,7 @@ resetTableOfContent()
 </script>
 <div class="post">
 	<div class="post__back">
-  	<a href="/">&lt;-- 返回首页</a>
+  	<a href="{{ site.site_root }}">&lt;-- 返回首页</a>
     <div class="post__title">
     	<h1>{{ page.title }}</h1>
     </div>
@@ -73,13 +73,13 @@ resetTableOfContent()
 		<div class="PageNavigation">
 			{% if page.next.url %}
 			<p>
-				<a class="next" href="{{page.next.url}}">下一节：{{page.next.title}}</a>
+				<a class="next" href="{{ site.site_root }}{{ page.next.url}}">下一节：{{page.next.title}}</a>
 			</p>
 			{% endif %}
 			<br/>
 			{% if page.previous.url %}
 			<p>
-				<a class="prev" href="{{page.previous.url}}">上一节：{{page.previous.title}}</a>
+				<a class="prev" href="{{ site.site_root }}{{ page.previous.url }}">上一节：{{page.previous.title}}</a>
 			</p>
 			{% endif %}
 		</div>
@@ -106,11 +106,14 @@ resetTableOfContent()
 		</div>
 		<!-- UY BEGIN -->
 		<div id="uyan_frame"></div>
+		<script type="text/javascript">
+		var uyan_config = { 'du': 'react.huziketang.com' }
+		</script>
 		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127727"></script>
 		<!-- UY END -->
 		<!--wechat donate-->
 		<div class='donate-mask' id='donate-mask'>
-			<img src='/assets/img/wechat-pay.png' id='wechat-pay' />
+			<img src='{{ site.static_path }}/assets/img/wechat-pay.png' id='wechat-pay' />
 		</div>
 		<script type="text/javascript">
 			var donateMask = document.getElementById('donate-mask')

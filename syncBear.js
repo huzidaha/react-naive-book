@@ -88,7 +88,7 @@ tags: [${keywords}]
     作者：<a href="https://www.zhihu.com/people/hu-zi-da-ha" target="_blank">胡子大哈</a>
   </li>
   <li>
-    原文链接：<a href="http://react.huziketang.com{{ page.url }}"> http://react.huziketang.com{{ page.url }} </a>
+    原文链接：<a href="http://huziketang.com/books/react{{ page.url }}"> http://huziketang.com/books/react{{ page.url }} </a>
   </li>
   <li>转载请注明出处，保留原文链接和作者信息。</li>
 </ul>
@@ -132,9 +132,10 @@ const copyImagesForNote = (note) => {
   )
 }
 
+const REMOTE_IMG_PATH = 'http://huzidaha.github.io/react-naive-book/assets/img/posts/'
 const replaceImageTag = (note, i) => {
   const item = itemsDescriptions[i] || { alt: '实例图片' }
-  note.text = note.text.replace(IMAGE_REGX, `<a href="/assets/img/posts/$2" target="_blank">![${item.alt}](/assets/img/posts/$2)</a>`)
+  note.text = note.text.replace(IMAGE_REGX, `<a href="${REMOTE_IMG_PATH}$2" target="_blank">![${item.alt}](${REMOTE_IMG_PATH}$2)</a>`)
 }
 
 const checkIfExistsAndCopy = async (obj) => {

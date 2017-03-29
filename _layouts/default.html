@@ -21,22 +21,22 @@
         <meta name="google-site-verification" content="{{ site.google_verify }}">
     {% endif %}
 
-    <link rel="icon" href="/assets/img/favicon.ico">
+    <link rel="icon" href="{{ site.static_path }}/assets/img/favicon.ico">
     <link rel="stylesheet"
 href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.site_root }}/assets/css/main.css">
 </head>
 
 <body>
 
     <div class='float-wechat' id='float-wechat'>
-    	<img src='/assets/img/wechat-user.jpeg' />
+    	<img src='{{ site.static_path }}/assets/img/wechat-user.jpeg' />
       <p>加入《React.js 小书》读者交流群，一起讨论、交流、学习前端技术。</p>
     </div>
     <div class="wrapper" id='wrapper'>
       {{ content }}
     </div>
-    <script src="/assets/js/highlight.js"></script>
+    <script src="{{ site.site_root }}/assets/js/highlight.js"></script>
     <script>
     var _hmt = _hmt || [];
     (function() {
