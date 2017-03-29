@@ -2,7 +2,7 @@
 [![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC%20BY--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0/legalcode)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-在线阅读：[http://react.huziketang.com](http://react.huziketang.com)
+在线阅读：[http://huziketang.com/books/react/](http://huziketang.com/books/react/)
 
 ## 简介
 这是一本关于 React.js 的小书。
