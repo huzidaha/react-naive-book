@@ -83,8 +83,12 @@ resetTableOfContent()
 			</p>
 			{% endif %}
 		</div>
-		<div class='share-block'>
-			<p>你的每一次分享，都是我更新内容的动力</p>
+		<div class='share-block margin-top-gap'>
+			<p>如果你觉得小书写得还不错，可以请胡子大哈喝杯茶 :)</p>
+			<button class='donate-button' id='donate-button' type="button">赞赏</button>
+		</div>
+		<div class='share-block margin-bottom-gap'>
+			<p>或者传播一下知识也是一个很好的选择</p>
 			<div class="share-block-inner">
 				<div class="jiathis_style_24x24">
 					<a class="jiathis_button_qzone"></a>
@@ -104,4 +108,22 @@ resetTableOfContent()
 		<div id="uyan_frame"></div>
 		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127727"></script>
 		<!-- UY END -->
+		<!--wechat donate-->
+		<div class='donate-mask' id='donate-mask'>
+			<img src='/assets/img/wechat-pay.png' id='wechat-pay' />
+		</div>
+		<script type="text/javascript">
+			var donateMask = document.getElementById('donate-mask')
+			var donateButton = document.getElementById('donate-button')
+			var wechatPay = document.getElementById('wechat-pay')
+			donateButton.addEventListener('click', function () {
+				donateMask.style.display = 'flex'
+			}, false)
+			donateMask.addEventListener('click', function () {
+				donateMask.style.display = 'none'
+			}, false)
+			wechatPay.addEventListener('click', function (event) {
+				event.stopPropagation()
+			}, false)
+		</script>
 	</div>
