@@ -2,7 +2,7 @@
 [![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC%20BY--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0/legalcode)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-在线阅读：[http://huziketang.com/books/react](http://huziketang.com/books/react)
+在线阅读：[http://react.huziketang.com](http://react.huziketang.com)
 
 ## 简介
 这是一本关于 React.js 的小书。
@@ -96,7 +96,7 @@
 * 专栏：[@前端大哈](https://zhuanlan.zhihu.com/qianduandaha)
 * 加入《React.js 小书》读者交流群，一起讨论、交流、学习前端技术。
 
-<img width='256px' src='http://huzidaha.github.io/react-naive-book/assets/img/wechat-user.jpeg' />
+<img width='256px' src='http://huzidaha.github.io/static/assets/img/wechat-user.jpeg' />
 
 
 ## License

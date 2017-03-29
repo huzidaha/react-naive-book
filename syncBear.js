@@ -132,8 +132,8 @@ const copyImagesForNote = (note) => {
   )
 }
 
-// const REMOTE_IMG_PATH = 'http://huzidaha.github.io/react-naive-book/assets/img/posts/'
-const REMOTE_IMG_PATH = 'http://huziketang.com/books/react/assets/img/posts/'
+const REMOTE_IMG_PATH = 'http://huzidaha.github.io/static/assets/img/posts/'
+// const REMOTE_IMG_PATH = 'http://huziketang.com/books/react/assets/img/posts/'
 const replaceImageTag = (note, i) => {
   const item = itemsDescriptions[i] || { alt: '实例图片' }
   note.text = note.text.replace(IMAGE_REGX, `<a href="${REMOTE_IMG_PATH}$2" target="_blank">![${item.alt}](${REMOTE_IMG_PATH}$2)</a>`)
