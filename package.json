@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sync:bear": "babel-node ./syncBear.js",
-    "build": "npm run sync:bear && jekyll build && rm -fr ./_site/node_modules && cp -a ./_site/assets ../static/",
-    "deploy": "cp -a ./_site/* ../remote/ && cd ../remote && unset GIT_DIR && git add -A && git cm -am 'deploy' && git push -u origin master || cd ../static/ && git add -A && git cm -am 'update' && git push -u origin master || true"
+    "build": "npm run sync:bear && jekyll build && rm -fr ./_site/node_modules && cp -a ./_site/assets ../static/"
   },
   "repository": {
     "type": "git",
