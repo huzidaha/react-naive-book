@@ -82,6 +82,7 @@
 * Lesson 37 - [动手实现 React-redux（二）：结合 context 和 store](http://huziketang.com/books/react/lesson37)
 * Lesson 38 - [动手实现 React-redux（三）：connect 和 mapStateToProps](http://huziketang.com/books/react/lesson38)
 * Lesson 39 - [动手实现 React-redux（四）：mapDispatchToProps](http://huziketang.com/books/react/lesson39)
+* Lesson 40 - [动手实现 React-redux（五）：Provider](http://huziketang.com/books/react/lesson40)
 * ...
 
 ## 特别鸣谢
