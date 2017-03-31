@@ -84,6 +84,7 @@
 * Lesson 39 - [动手实现 React-redux（四）：mapDispatchToProps](http://huziketang.com/books/react/lesson39)
 * Lesson 40 - [动手实现 React-redux（五）：Provider](http://huziketang.com/books/react/lesson40)
 * Lesson 41 - [动手实现 React-redux（六）：React-redux 总结](http://huziketang.com/books/react/lesson41)
+* Lesson 42 - [使用真正的 Redux 和 React-redux](http://huziketang.com/books/react/lesson42)
 * ...
 
 ## 特别鸣谢
