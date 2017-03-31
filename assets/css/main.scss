@@ -173,6 +173,7 @@ blockquote {
 	}
 	&__content {
 		padding-top: 20px;
+		word-wrap: break-word;
 		h1 {
 			font-size: 1.4em;
 			font-weight: 700;
@@ -250,6 +251,7 @@ blockquote {
 				background: none;
 				border: none;
 			}
+			word-wrap: normal;
 			line-height: 1.2rem;
 			padding: 10px;
 			margin-bottom: 15px;

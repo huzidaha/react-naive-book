@@ -77,7 +77,7 @@
 * Lesson 32 - [动手实现 Redux（三）：纯函数（Pure Function）简介](http://huziketang.com/books/react/lesson32)
 * Lesson 33 - [动手实现 Redux（四）：共享结构的对象提高性能](http://huziketang.com/books/react/lesson33)
 * Lesson 34 - [动手实现 Redux（五）：不要问为什么的 reducer](http://huziketang.com/books/react/lesson34)
-* Lesson 35 - [动手实现 Redux（六）：Redux 总结](http://huziketang.com/books/react/lesson35)c
+* Lesson 35 - [动手实现 Redux（六）：Redux 总结](http://huziketang.com/books/react/lesson35)
 * Lesson 36 - [动手实现 React-redux（一）：初始化工程](http://huziketang.com/books/react/lesson36)
 * Lesson 37 - [动手实现 React-redux（二）：结合 context 和 store](http://huziketang.com/books/react/lesson37)
 * Lesson 38 - [动手实现 React-redux（三）：connect 和 mapStateToProps](http://huziketang.com/books/react/lesson38)
@@ -85,6 +85,7 @@
 * Lesson 40 - [动手实现 React-redux（五）：Provider](http://huziketang.com/books/react/lesson40)
 * Lesson 41 - [动手实现 React-redux（六）：React-redux 总结](http://huziketang.com/books/react/lesson41)
 * Lesson 42 - [使用真正的 Redux 和 React-redux](http://huziketang.com/books/react/lesson42)
+* Lesson 43 - [Smart 组件 vs Dumb 组件](http://huziketang.com/books/react/lesson43)
 * ...
 
 ## 特别鸣谢

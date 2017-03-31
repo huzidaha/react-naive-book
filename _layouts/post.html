@@ -107,7 +107,12 @@ resetTableOfContent()
 		<!-- UY BEGIN -->
 		<div id="uyan_frame"></div>
 		<script type="text/javascript">
-		var uyan_config = { 'du': 'react.huziketang.com' }
+		var paths = window.location.pathname.split('/')
+		var lessonName = paths[paths.length - 1]
+		var uyan_config = {
+			// 'url': 'http://react.huziketang.com/blog/' + lessonName,
+			'du': 'react.huziketang.com'
+		}
 		</script>
 		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127727"></script>
 		<!-- UY END -->
