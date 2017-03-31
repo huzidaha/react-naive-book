@@ -27,7 +27,7 @@
 
 **第二个阶段**：让读者更进一步了解 React.js，包括组件生命周期及其含义、state 和 props 的进阶概念、props 验证及其意义、组件组合进阶、如何和 DOM 打交道、并且开始引入前端应用状态管理所存在的问题。
 
-**第三个阶段**：让读者掌握 React.js 较为高级的概念，包括高阶组件、context。并且尝试引入 React-router、redux 来协助我们构建较为完整的前端应用；还会开始深入讨论前端应用状态管理的问题。
+**第三个阶段**：让读者掌握 React.js 较为高级的概念，包括高阶组件、context。并且尝试引入 React-redux 来协助我们构建较为完整的前端应用，还会开始深入讨论前端应用状态管理的问题；关于 React-router 也会有所提及。
 
 ## 目录
 
@@ -83,6 +83,7 @@
 * Lesson 38 - [动手实现 React-redux（三）：connect 和 mapStateToProps](http://huziketang.com/books/react/lesson38)
 * Lesson 39 - [动手实现 React-redux（四）：mapDispatchToProps](http://huziketang.com/books/react/lesson39)
 * Lesson 40 - [动手实现 React-redux（五）：Provider](http://huziketang.com/books/react/lesson40)
+* Lesson 41 - [动手实现 React-redux（六）：React-redux 总结](http://huziketang.com/books/react/lesson41)
 * ...
 
 ## 特别鸣谢
