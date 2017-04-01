@@ -70,6 +70,8 @@
 
 **第三个阶段**
 
+![](https://img.shields.io/badge/已完成-90%25-brightgreen.svg)
+
 * Lesson 28 - [高阶组件（Higher-Order Components）](http://huziketang.com/books/react/lesson28)
 * Lesson 29 - [React.js 的 context](http://huziketang.com/books/react/lesson29)
 * Lesson 30 - [动手实现 Redux（一）：优雅地修改共享状态](http://huziketang.com/books/react/lesson30)
@@ -86,6 +88,9 @@
 * Lesson 41 - [动手实现 React-redux（六）：React-redux 总结](http://huziketang.com/books/react/lesson41)
 * Lesson 42 - [使用真正的 Redux 和 React-redux](http://huziketang.com/books/react/lesson42)
 * Lesson 43 - [Smart 组件 vs Dumb 组件](http://huziketang.com/books/react/lesson43)
+* Lesson 44 - [实战分析：评论功能（七）](http://huziketang.com/books/react/lesson44)
+* Lesson 45 - [实战分析：评论功能（八）](http://huziketang.com/books/react/lesson45)
+* Lesson 46 - [实战分析：评论功能（九）](http://huziketang.com/books/react/lesson46)
 * ...
 
 ## 特别鸣谢
