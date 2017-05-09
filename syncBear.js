@@ -50,12 +50,15 @@ const start = async () => {
   console.log('\n DONE!')
 }
 
+const SCRIPTOJ_URL = 'http://scriptoj.huziketang.com'
+
 const generateNoteObj = (rawNote, i) => {
   const note = rawNote.ZTEXT
   const lessonCaptures = note.match(LESSON_REGX)
   const num = +lessonCaptures[2]
   const title = lessonCaptures[4].trim()
   const text = note
+    .replace(/\[([^\[]+?)\]\(SCRIPTOJ:(\d+)\)/g,  `<a target="_blank" href="${SCRIPTOJ_URL}/problems/$2">$1</a>`)
     .replace(LESSON_REGX, '')
     .replace(TAG_REGX, '')
     .trim()
@@ -83,7 +86,7 @@ description: ${description}
 tags: [${keywords}]
 ---
 
-<ul style='font-size: 14px;'>
+<ul style='font-size: 14px; margin-top: -10px;'>
   <li>
     作者：<a href="https://www.zhihu.com/people/hu-zi-da-ha" target="_blank">胡子大哈</a>
   </li>
@@ -98,6 +101,13 @@ tags: [${keywords}]
 const IMAGE_REGX = /\[image:([\w\d\-]+\/([\w\d\.\-]+.png))\]/g
 const IMAGE_REGX_EACH = /\[image:([\w\d\-]+\/([\w\.\d\-]+.png))\]/
 
+const TEXT_SUFFIX = () => `
+
+* * *
+
+> 因为第三方评论工具有问题，对本章节有任何疑问的朋友可以移步到 <a target="_blank" href="${SCRIPTOJ_URL}/category/4/react-js-小书交流区">React.js 小书的论坛</a> 发帖，我会回答大家的疑问。
+`
+
 const generatePost = async (note, i) => {
   const date = getDate(i)
   const postName = `./_posts/${date}-lesson${i + 1}.md`
@@ -106,7 +116,7 @@ const generatePost = async (note, i) => {
   console.log('Creating post', note.title)
   return fs.writeFile(
     postName,
-    `${TEXT_PREFIX(note.title, i)}${note.text}`,
+    `${TEXT_PREFIX(note.title, i)}${note.text}${TEXT_SUFFIX()}`,
     'utf-8'
   )
 }
