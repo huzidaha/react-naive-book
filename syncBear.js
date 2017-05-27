@@ -50,7 +50,7 @@ const start = async () => {
   console.log('\n DONE!')
 }
 
-const SCRIPTOJ_URL = 'http://scriptoj.huziketang.com'
+const SCRIPTOJ_URL = 'http://scriptoj.com'
 
 const generateNoteObj = (rawNote, i) => {
   const note = rawNote.ZTEXT
